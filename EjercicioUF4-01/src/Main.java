@@ -9,15 +9,15 @@ public class Main {
                 {"cat", "gato"},
                 {"cheetah", "guepardo"},
                 {"dog", "perro"},
-                {"eagle", "águila"},
+                {"eagle", "aguila"},
                 {"fish", "pez"},
                 {"frog", "rana"},
                 {"horse", "caballo"},
-                {"lion", "león"},
+                {"lion", "leon"},
                 {"lizard", "lagarto"},
                 {"meerkat", "suricata"},
                 {"monkey", "mono"},
-                {"orangutan", "orangután"},
+                {"orangutan", "orangutan"},
                 {"panther", "pantera"},
                 {"parrot", "loro"},
                 {"pig", "cerdo"},
@@ -34,7 +34,7 @@ public class Main {
             String input;
             System.out.println("Traduce " + ingles + ":");
             input = lector.nextLine().toLowerCase();
-            if (input.equals(resultado)){
+            if (input.equals(resultado)){ // equals() en lugar de == por no estar alojado en la misma parte de la memoria
                 System.out.println("Bien hecho!!");
                 aciertos++;
             } else{
