@@ -1,6 +1,8 @@
 public class Main {
     public static void  main (String[] args){
 
+        // No uso el constructor parametrizado porque creo que queda mas claro asi
+
         Profesor prof = new Profesor();
         prof.setNombre("Raul Cimas");
         prof.setDireccion("P Sherman calle Wallaby 42 Sidney");
@@ -21,6 +23,10 @@ public class Main {
         admin.setTelefono("654654654");
         admin.setTareas("Poner una lavadora, tender la ropa, planchar");
 
+        /*
+         * El enunciado pide simplemente que se devuelva la información.
+         * La muestro por consola para mayor claridad
+         */
         System.out.println(alum.toString());
         System.out.println(" ");
         System.out.println(prof.toString());
@@ -28,8 +34,7 @@ public class Main {
         System.out.println(admin.toString());
         System.out.println(" ");
 
-        // Ver comentario en Profesor.java de este metodo
-        System.out.println(alum.llamar(prof));
+        System.out.println(alum.llamar(prof.getNombre()));
         System.out.println(" ");
         System.out.println(prof.ponerNotas());
         System.out.println(" ");

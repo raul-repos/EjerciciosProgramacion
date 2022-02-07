@@ -14,6 +14,11 @@ public class Alumno extends Persona {
         return (this.getNombre() + " esta llamando a "+ p);
     }
 
+    protected String llamar (String p){
+        return (this.getNombre() + " esta llamando a " + p);
+    }
+
+
     @Override
     protected String trabajar() {
         return ("El alumno " + this.getNombre() + " va a estudiar " + this.getCurso());
@@ -36,4 +41,8 @@ public class Alumno extends Persona {
 
     public Alumno() {
     }
+    public Alumno (String NIF, String nombre, String direccion, String telefono) {
+        super(NIF, nombre, direccion, telefono);
+    }
+
 }

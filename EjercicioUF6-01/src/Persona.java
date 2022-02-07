@@ -37,7 +37,15 @@ public abstract class Persona {
         this.telefono = telefono;
     }
 
+    public Persona (){
 
+    }
+    public Persona (String NIF, String nombre, String direccion, String telefono) {
+        this.NIF = NIF;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
 
 
     protected abstract String llamar(Persona p);
