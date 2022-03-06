@@ -5,6 +5,10 @@ public class CuentaBancaria {
 
     private String cliente;
 
+    public double getSaldo() {
+        return saldo;
+    }
+
     private double saldo;
 
     private ArrayList<Movimiento> movimientos;
@@ -21,12 +25,11 @@ public class CuentaBancaria {
 
     }
     //TODO
-    public void agregarMovimiento(String concepto, double cantidad) throws NumberFormatException {
+    public void agregarMovimiento(String concepto, double cantidad) {
+            this.saldo = this.saldo + cantidad;
+            this.movimientos.add(new Movimiento(concepto, cantidad,
 
-        this.saldo = this.saldo + cantidad;
-        this.movimientos.add(new Movimiento(concepto, cantidad,
-
-                saldo));
+                    saldo));
 
     }
 
